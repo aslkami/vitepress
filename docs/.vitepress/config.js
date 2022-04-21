@@ -1,8 +1,8 @@
-const base = process.env.NODE_ENV === 'production' ? '/vue-docs' : '';
+const base = process.env.NODE_ENV === 'production' ? '/' : '';
 const { resolve } = require('path');
 
 module.exports = {
-  title: 'vue-docs',
+  title: 'Vue 知识库',
   description: '',
   // 扫描srcIncludes里面的 *.md文件
   srcIncludes: ['src'],
@@ -13,34 +13,12 @@ module.exports = {
   base,
   themeConfig: {
     // logo: '../logo.svg',
-    nav: [{ text: 'demo', link: '/math' }],
-    lang: 'zh-CN',
-    locales: {
-      '/': {
-        lang: 'zh-CN',
-        title: 'vue-docs',
-        description: '',
-        label: '中文',
-        selectText: '语言',
-        nav: [{ text: '指南', link: '/' }],
-        sidebar: [
-          { text: '介绍', link: '/' },
-          { text: 'Button', link: '/components/button/' },
-        ],
-      },
-      '/en/': {
-        lang: 'en-US',
-        title: 'vue-docs',
-        description: '',
-        label: 'English',
-        selectText: 'Languages',
-        nav: [{ text: 'Guide', link: '/' }],
-        sidebar: [
-          { text: 'Getting Started', link: '/en/' },
-          { text: 'Button', link: '/en/components/button/' },
-        ],
-      },
-    },
+    nav: [{ text: '介绍', link: '/' }],
+    sidebar: [
+      { text: '介绍', link: '/' },
+      { text: 'Button', link: '/components/button/' },
+      { text: 'Pinia', link: '/pinia/' },
+    ],
     search: {
       searchMaxSuggestions: 10,
     },
