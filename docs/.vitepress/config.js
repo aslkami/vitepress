@@ -3,7 +3,7 @@ const { resolve } = require('path');
 
 module.exports = {
   title: 'Vue 知识库',
-  description: '',
+  description: 'aslkami vue, pinia, vuex, vue-roter',
   // 扫描srcIncludes里面的 *.md文件
   srcIncludes: ['src'],
   alias: {
