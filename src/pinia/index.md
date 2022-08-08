@@ -1,3 +1,9 @@
+---
+map:
+  # 映射到docs的路径
+  path: /pinia/
+---
+
 ## Pinia 初体验
 
 > [官网](https://pinia.vuejs.org/) [翻译文档](https://pinia.web3doc.top/)
