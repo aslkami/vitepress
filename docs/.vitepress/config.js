@@ -1,4 +1,4 @@
-const base = process.env.NODE_ENV === 'production' ? '/vue' : '/vue';
+const base = process.env.NODE_ENV === 'production' ? '/' : '/vue';
 const { resolve } = require('path');
 
 module.exports = {
